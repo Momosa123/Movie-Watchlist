@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/f0d5ccbd81.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Movie WatchList</title>
+  </head>
+  <body>
+    <header>
+      <div class="container navigation">
+        <h1>Find your film</h1>
+        <a class="watchlist" href="watchlist.html">My Watchlist</a>
+      </div>
+
+      <form class="container" id="movie-search-form" action="">
+        <input
+          id="movie-search"
+          type="text"
+          placeholder=" Search for a movie"
+        />
+        <button>Search</button>
+      </form>
+    </header>
+    <main class="main-container">
+      <div id="placeholder-image-container">
+        <img class="placeholder-image" src="images/Icon.png" alt="" />
+        <p>Start exploring</p>
+      </div>
+      <div id="movie-description" class="hidden container">
+        <div id="image-slot"></div>
+
+        <div>
+          <div class="movie-title-container">
+            <h2 id="movie-title"></h2>
+            <span id="ratings"><i class="fas fa-star"></i></span>
+          </div>
+          <span id="runtime"></span><span id="genre"></span
+          ><button id="addFilm">
+            <i class="fas fa-plus-circle"></i>Watchlist
+          </button>
+          <p id="plot"></p>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
